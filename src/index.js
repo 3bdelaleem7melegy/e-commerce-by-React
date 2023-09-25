@@ -12,6 +12,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+// import Register from './pages/register';
 import ShopElec from './pages/ShopElec';
 import ShopCars from './pages/ShopCars';
 import DetailsCar1 from './pages/DetailsCar1';
@@ -31,13 +32,15 @@ import PaymentWear2 from './pages/PaymentWear2';
 
 
 
-
-
 const router = createBrowserRouter([
+  // {
+  //   path: "/",
+  //   element: <Register/>,
+  //   errorElement:<h1>lemosssssssssssoo</h1>
+  // },
   {
     path: "/",
     element: <ShopElec/>,
-    errorElement:<h1>lemosssssssssssoo</h1>
   },
   {
     path: "/ShopCars",
@@ -99,6 +102,7 @@ const router = createBrowserRouter([
     path: "/PaymentWear2",
     element: <PaymentWear2/>,
   },
+
   
 ]);
 

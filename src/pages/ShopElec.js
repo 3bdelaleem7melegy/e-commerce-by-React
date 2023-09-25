@@ -27,6 +27,7 @@ import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import BoyIcon from '@mui/icons-material/Boy';
+
 const drawerWidth = 240;
 
 
@@ -53,16 +54,21 @@ export default function PersistentDrawerLeft() {
   const navigate = useNavigate();
 
   return (
+    
     <>
+    
       <Box sx={{ display: "flex" }}>
+        
         <CssBaseline />
 
         <AppBar
           position="fixed"
-          open={open}
+          open={open}          
           sx={{
             // width: { sm: `calc(100% - ${drawerWidth}px)` },
-            ml: { xs: 0 },
+            ml: { xs: 0 } 
+            
+
           }}
         >
           <Toolbar>
@@ -158,14 +164,14 @@ export default function PersistentDrawerLeft() {
               </ListItemButton>
             </ListItem>
           </List>
-        
+        <Typography variant="body1" color="initial" sx={{ display: "flex", justifyContent: "center",mt:50,ml:1,fontSize:17 }}>Developed by:3bdelAleemmelegy 2023</Typography>
         </Drawer>
       </Box>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <Card sx={{ maxWidth: 500, mt: 9, display: { xs: "block" } }}>
           <CardMedia sx={{ height: 200 }} image="/img/download.jpg" />
           <CardContent>
-            <Typography gutterBottom variant="h1" component="div">
+            <Typography gutterBottom variant="h3" >
               Airpods
             </Typography>
             <Typography >
@@ -191,7 +197,7 @@ export default function PersistentDrawerLeft() {
         <Card sx={{ maxWidth: 500, mt: 2, display: { xs: "block" } }}>
           <CardMedia sx={{ height: 200 }} image="/img/headset.png" />
           <CardContent>
-            <Typography gutterBottom variant="h2" component="div">
+            <Typography gutterBottom variant="h3" component="div">
               head Phone
             </Typography>
             <Typography >
